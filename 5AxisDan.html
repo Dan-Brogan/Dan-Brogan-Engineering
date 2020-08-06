@@ -1,0 +1,50 @@
+<HTML>
+<Head>
+	<Title> DanBrogan.com </Title>
+</Head>
+<center><Body>
+
+<a href="EngineeringProjects.html"><img src="EngineeringProjects3.JPG" width="700" height="130"></a>
+
+<hr>
+<p style="font-size:25px"><a href="index.html"> HOME</a> | <a href="EngineeringProjects.html"> ENGINEERING PROJECTS</a> | <a href="RESUME.html"> RESUME</a> | <a href="CONTACT.html"> CONTACT</a></p>
+<hr>
+
+<p style="font-size:20px"><b>5-Axis 3D Printer</b></p>
+<hr>
+</center>
+<p style="font-size:20px">&emsp;<b>Project Description:</b><br><br>&emsp;This project was inspired by <a href="5Axis3DPrinter.html">Dan Brogan's senior Mechanical Engineering capstone project at the University of Rhode Island</a>. Before the COVID-19 pandemic restricted their access to campus, Dan's team had designed and constructed a 3D printer only capable of following a 3-axis toolpath. While they had created a machine that is physically capable of 5-axis motion, they did not create a software solution to following a 5-axis toolpath.<br>&emsp;After graduating, Dan Brogan decided to design and build his own 5-axis 3D printer. Dan invented a software solution capable of converting 3-axis gcode for certain axisymmetric parts to be converted to 5-axis gcode. While his solution is currently limited to certain part geometries, he believes there is potential for his methodology to create 5-axis instructions for more complex geometries in the future.
+<hr>
+<p style="font-size:20px">&emsp;<b>5-Axis Toolpath Demonstration:</b><br><br>&emsp;The toolpath demonstration video below shows a 5-axis toolpath of a dumbell-shaped part. The part was modelled in Autodesk Inventor and sliced using Ultimaker Cura. The 3-axis gcode from Cura was then interpreted by Dan's software and converted to 5-axis instructions. The video shows a complete 5-axis print routine where the extruder centers over the build platform, prints the 3-axis component of the part including a substrate for when the other two axes are activated, rotates the build plate 90 degrees and begins printing in 5-axis mode.
+<center>
+<img src="dbell_inv.jpg" style="float: center; width: 30%; margin-right: 4%; margin-bottom: 2.0em;"><img src="dbell_cura.jpg" style="float: center; width: 30%; margin-right: 0%; margin-bottom: 2.0em;">
+</center>
+<br>
+<center>
+<div id="ytplayer"></div>
+
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+      height: '360',
+      width: '640',
+      videoId: 'BpdF9DLY2yk'
+    });
+  }
+</script>
+</center>
+
+<hr>
+<p style="font-size:20px">&emsp;<b>Design Features:</b><br><br>&emsp;An important feature of this 3D printer (referred to as the "Forge Vc", c for compact) is its manufacturability. Most parts on the Forge Vc are standard mass-produced parts found on traditional 3-axis printers. With the exception of the printing bed cradle assembly, most custom components of the Forge Vc can be printed on a 3-axis printer. If a part breaks on the Forge Vc, it can likely be repaired quickly if another 3D printer is nearby. A competetive feature of the Forge Vc is that no complex 5-axis slicing software is needed. For compatible geometries, the Forge Vc simply takes 3-axis gcode as input and generates its own 5-axis instructions based on the machine's capabilities. Right now the Forge Vc can print any traditional 3-axis part in 3-axis mode and can act as an additive lathe in 5-axis mode. Future work should investigate how to expand its 5-axis capabilities past certain axisymmetric parts.
+<hr>
+</Body>
+</HTML>
