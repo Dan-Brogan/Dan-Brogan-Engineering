@@ -16,7 +16,7 @@
 <p style="font-size:20px">&emsp;<b>Project Description:</b><br><br>&emsp;This project investigated the use of deep learning computer vision for the task of fastener detection. Resulting from this work is a published paper available through <a href="https://www.sciencedirect.com/science/article/pii/S2590005621000394?via%3Dihub">this link</a> (Abstract Below) and an annotated dataset of cross-recessed-screws available through <a href="https://github.com/Dan-Brogan/Cross-Recessed-Screw_Deep-Learning-Datasets">this link</a>. Below the abstract is an embedded video of an RI AI Meetup talk that I gave, which provides a summary of this project. This work was funded by the NASA Rhode Island Space Grant and supported by the URI Artificial Intelligence Laboratory.
 
 <center>
-<img src="paperAbstract.JPG" style="float: center; width: 80%">
+<img src="paperAbstract.JPG" style="float: center; width: 50%">
 </center>
 
 <br>
@@ -37,20 +37,10 @@
     player = new YT.Player('ytplayer', {
       height: '360',
       width: '640',
-      videoId: 'v=qOBm-p_EHVM'
+      videoId: 'qOBm-p_EHVM'
     });
   }
 </script>
 
-
-<p style="font-size:12px">&emsp;5-Axis Toolpath Demo, 15X speed.<br>
-</center>
-<br>
-<p style="font-size:20px">&emsp;<b>Continuing Work:</b><br><br>&emsp;While the first prototype successfully demonstrated the ability to follow a 5-axis toolpath, significant work was still required. The temperature control system, extruder motor firmware, operator interface, and a 5-axis slicer still needed to be developed. In addition to this, the mechanical, electrical, and software aspects of this project could use significant renovation to improve the design for manufacturability, affordability, and user experience.
-<br>&emsp;I first focused on the physical redesign with an emphasis on reducing the number of manufacturing steps required to build the printer. Each component in the design is either a COTS sourced part or it is a custom part. COTS parts are desireable because they are inexpensive, high quality, and it is likely that multiple vendors have the same part so there are no schedule hang-ups in waiting for a single company to regenerate its supply. Since 5-axis printers are not mainstream, there is no way to get around having to make some custom parts. Unlike the first prototype, every custom part on the second prototype is made from the same material and uses the same manufacturing process. The custom parts on the first prototype were either 3D printed (on a 3-axis printer) or they were manually cut from sheet metal and welded together. Wanting to reduce manufacturing complexity, the custom parts on the second prototype are all CNC-milled from 3mm thick aluminum and the parts that require bending are all bent to the same angle of 90 degrees. This design choice eliminates the large amount of manufacturing time needed to print custom parts and manually cut and weld sheet metal together.
-<br>&emsp;The second prototype switched from a Raspberry Pi and CNC motor controllers to an Arduino Mega 2560, RAMPS 1.4, and A4988 stepper motor controllers. This design choice greatly reduces the cost and electronics size, increases the number of GPIO pins, and facilitates the use of an LCD display with a rotary encoder.
-<br>&emsp;As this project is unique it is not feasible to repurpose publicly available firmware. As such, I wrote Arduino firmware from scratch to control the stepper motors, LCD screen and rotary encoder, and am starting work on the temperature control system.
-<br>&emsp;Further details regarding the design of this project are not discussed as they are considered intellectual property to the owner of this website.
-<hr>
 </Body>
 </HTML>
