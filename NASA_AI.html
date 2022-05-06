@@ -10,17 +10,15 @@
 <p style="font-size:25px"><a href="index.html"> HOME</a> | <a href="EngineeringProjects.html"> ENGINEERING PROJECTS</a> | <a href="RESUME.html"> RESUME</a> | <a href="CONTACT.html"> CONTACT</a></p>
 <hr>
 
-<p style="font-size:20px"><b>5-Axis 3D Printer</b></p>
+<p style="font-size:20px"><b>NASA Deep Learning Computer Vision</b></p>
 <hr>
 </center>
-<p style="font-size:20px">&emsp;<b>Project Description:</b><br><br>&emsp;This project was inspired by my senior Mechanical Engineering capstone project at the University of Rhode Island. Before the COVID-19 pandemic restricted access to campus, my team had designed and constructed a 3D printer capable of following a 3-axis toolpath. While we had created a machine that is mechanically capable of 5-axis motion, a software solution to following a 5-axis toolpath was not investigated.
-<br>&emsp;After graduating URI, I decided to design and build a 5-axis 3D printer using my own resources. I redesigned the mechanical, electrical, and software to create the first prototype. This prototype used a Raspberry Pi with firmware that I wrote from scratch in Python to simultaneously control each axis. I used a technique called multithreading which allows the Raspberry Pi to conduct multiple tasks at virtually the same time even though it is only a single-core processor. Regarding the mechanical design, I chose a layout that would reduce the inertial loads on the motors for 5-axis operation. The X, Y, and Z axes are prismatic like a traditional cartesian printer, and the remaining 2 axes are revolute. Revolute axis A spins the printing bed within its plane while the B axis tilts the printing bed out of plane. I created a software solution capable of interpreting 3-axis gcode for certain axisymmetric parts and converting it to 5-axis gcode to test if the prototype could follow a 5-axis toolpath.
-<br>
-<p style="font-size:20px">&emsp;<b>5-Axis Toolpath Demonstration:</b><br><br>&emsp;The toolpath demonstration video below shows the 5-axis toolpath for a dumbbell-shaped part. This shape was chosen for demonstration because it requires support material on a 3-axis printer and requires no support material on a 5-axis printer. The part was modelled in Autodesk Inventor and sliced using Ultimaker Cura. The 3-axis gcode from Cura was then interpreted by my software and converted to 5-axis instructions. The video shows a complete 5-axis print routine where the extruder centers over the build platform, prints the 3-axis component of the part including a substrate for when the other two axes are activated, rotates the build plate 90 degrees and begins printing in 5-axis mode.
+<p style="font-size:20px">&emsp;<b>Project Description:</b><br><br>&emsp;This project investigated the use of deep learning computer vision for the task of fastener detection. Resulting from this work is a published paper available through <a href="https://www.sciencedirect.com/science/article/pii/S2590005621000394?via%3Dihub">this link</a> (Abstract Below) and an annotated dataset of cross-recessed-screws available through <a href="https://github.com/Dan-Brogan/Cross-Recessed-Screw_Deep-Learning-Datasets">this link</a>. Below the abstract is an embedded video of an RI AI Meetup talk that I gave, which provides a summary of this project. This work was funded by the NASA Rhode Island Space Grant and supported by the URI Artificial Intelligence Laboratory.
+
 <center>
-<img src="dbell_inv.JPG" height="200" style="float: center; margin-right: 4%; margin-bottom: 2.0em;"><img src="dbell_cura.JPG" height="200" style="float: center; margin-right: 0%; margin-bottom: 2.0em;"><p style="clear: both;">
-<p style="font-size:12px">&emsp;Dumbbell part. Autodesk Inventor (Left). Ultimaker Cura (Right).<br>
+<img src="paperAbstract.JPG" style="float: center; width: 80%">
 </center>
+
 <br>
 <center>
 <div id="ytplayer"></div>
@@ -39,7 +37,7 @@
     player = new YT.Player('ytplayer', {
       height: '360',
       width: '640',
-      videoId: 'BpdF9DLY2yk'
+      videoId: 'v=qOBm-p_EHVM'
     });
   }
 </script>
